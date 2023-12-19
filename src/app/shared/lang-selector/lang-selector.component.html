@@ -1,0 +1,23 @@
+<div>
+  <a
+    class="nav-link dropdown-toggle disabled"
+    href="#"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    <img
+      src="../../assets/icons/language-svgrepo-com.png"
+      class="img-fluid"
+      style="max-width: 30px; filter: grayscale(100%); filter: brightness(0%)"
+    />
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end language-selector-dropdown">
+    <li>
+      <a class="dropdown-item" (click)="switchLanguage('en-US')" href="">En</a>
+    </li>
+    <li>
+      <a class="dropdown-item" (click)="switchLanguage('pt-BR')" href="">Pt</a>
+    </li>
+  </ul>
+</div>

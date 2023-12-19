@@ -1,0 +1,113 @@
+<div class="custom-nav">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Danilo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                i18n
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                routerLink="/home"
+                routerLinkActive="active"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                i18n
+                class="nav-link"
+                href="#"
+                routerLink="/blog"
+                routerLinkActive="active"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                i18n
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Me
+              </a>
+              <ul class="dropdown-menu">
+                <li><a i18n class="dropdown-item" href="#"
+                  routerLink="/resume"
+                  routerLinkActive="active">Resume</a></li>
+                <li><a i18n class="dropdown-item" href="#"
+                  routerLink="/hobbies"
+                  routerLinkActive="active">Hobbies</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a i18n class="dropdown-item" href="#"
+                  routerLink="/contact"
+                  routerLinkActive="active">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Social Media -->
+          <div class="d-flex">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://github.com/SpicyFerret" target="_blank">
+                  <img
+                    src="../../assets/icons/github-mark.png"
+                    class="img-fluid"
+                    style="max-width: 30px"
+                  />
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.instagram.com/danilo.nmarques/"
+                  target="_blank"
+                >
+                  <img
+                    src="../../assets/icons/Instagram_Glyph_Black.png"
+                    class="img-fluid"
+                    style="max-width: 30px"
+                  />
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.linkedin.com/in/danilo-nmarques/"
+                  target="_blank"
+                  ><img
+                    src="../../assets/icons/LI-In-Bug.png"
+                    class="img-fluid"
+                    style="
+                      max-width: 30px;
+                      filter: grayscale(100%);
+                      filter: brightness(0%);
+                    "
+                  />
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <app-lang-selector></app-lang-selector>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

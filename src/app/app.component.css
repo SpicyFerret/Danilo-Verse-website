@@ -1,0 +1,17 @@
+.main-conteiner {
+    padding: 20px;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+body, html {
+    height: 100%;
+}
+
+.content {
+    min-height: calc(100% - 60px); /* Adjust 60px to match the height of your footer */
+}
+
+.footer {
+    height: 60px; /* Adjust this to match the height of your footer */
+}
