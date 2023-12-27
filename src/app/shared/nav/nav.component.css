@@ -1,3 +1,11 @@
 .custom-nav {
-    background-color: cadetblue;
+    background-color: #00000046;
+}
+
+.white-text {
+    color: white;
+}
+
+.white-icon {
+    filter: invert(1);
 }

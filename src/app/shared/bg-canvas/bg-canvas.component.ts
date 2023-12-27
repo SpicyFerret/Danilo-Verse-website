@@ -6,6 +6,7 @@ import {
   ViewChild,
 } from '@angular/core';
 import { MeteorShower } from './meteor';
+import { StarredSky } from './starred-sky';
 
 @Component({
   selector: 'app-bg-canvas',
@@ -18,58 +19,64 @@ export class BgCanvasComponent implements AfterViewInit {
   @ViewChild('bgCanvas', { static: true })
   bgCanvas!: ElementRef<HTMLCanvasElement>;
   ngAfterViewInit(): void {
+    this.starredSky = new StarredSky(window.innerWidth, window.innerHeight);
     this.draw();
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event: Event): void {
+    this.starredSky?.reSize(window.innerWidth, window.innerHeight);
     this.draw();
   }
 
   private draw(): void {
     const canvas = this.bgCanvas.nativeElement;
     const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
     if (ctx) {
-      // Set canvas dimensions to fill the window
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (this.starredSky) {
+        this.starredSky.draw(ctx);
+      }
 
-      // Draw on the canvas
-      ctx.fillStyle = '#112';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
       if (this.meteorShower) {
         this.meteorShower.draw(ctx);
       }
     }
   }
 
+  private starredSky: StarredSky | null = null;
   private meteorShowerTimer: number = 0;
   private meteorShower: MeteorShower | null = null;
-  private updatesPerSecond: number = 120;
+  private updatesPerSecond: number = 60;
 
   private update(): void {
-    console.log('update:' + this.meteorShowerTimer);
-    console.log('update:' + this.meteorShower?.meteors.length);
+    if (this.starredSky) {
+      this.starredSky.update();
+    }
+
     if (this.meteorShowerTimer <= 0 || this.meteorShower === null) {
-      const meteorSize = Math.floor(Math.random() * 10 + 10);
+      const meteorSize = Math.floor(Math.random() * 200 + 50);
       const numberOfMeteors = Math.floor(Math.random() * 5 + 2);
-      const meteorSpeed = Math.floor(Math.random() * 500 + 1000);
-      const meteorAngle = Math.floor(Math.PI*1.2);
-      const gravity = 5;
+      const meteorSpeed = Math.floor(
+        (Math.random() * 100000) / meteorSize + 3000
+      );
+      const meteorAngle = Math.floor(Math.PI * 1.2);
+      const gravity = 2;
       this.meteorShower = new MeteorShower(
         window.innerWidth,
         window.innerHeight,
         numberOfMeteors,
         meteorSize,
-        Math.floor(meteorSize / 4),
+        Math.floor(meteorSize / 3),
         meteorSpeed / this.updatesPerSecond,
         meteorAngle,
-        gravity / this.updatesPerSecond,
-        '#FFF'
+        gravity / this.updatesPerSecond
       );
       this.meteorShowerTimer =
-        Math.floor(Math.random() * 30 + 45) * this.updatesPerSecond;
+        Math.floor(Math.random() * 20 + 5) * this.updatesPerSecond;
     }
     this.meteorShowerTimer--;
     this.meteorShower?.update();
@@ -78,7 +85,10 @@ export class BgCanvasComponent implements AfterViewInit {
   tickIntervalId: any;
 
   ngOnInit(): void {
-    this.tickIntervalId = setInterval(() => this.tick(), 1000 / this.updatesPerSecond);
+    this.tickIntervalId = setInterval(
+      () => this.tick(),
+      1000 / this.updatesPerSecond
+    );
   }
 
   ngOnDestroy(): void {
@@ -89,6 +99,4 @@ export class BgCanvasComponent implements AfterViewInit {
     this.update();
     this.draw();
   }
-
-  
 }
