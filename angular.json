@@ -18,8 +18,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "localize": ["pt-BR"],
-            "outputPath": "dist/client",
+            "localize": ["en-US", "pt-BR"],
+            "outputPath": "dist",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],

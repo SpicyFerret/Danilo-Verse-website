@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Simulate lightning on a computer",
+    "date": "2023-12-19",
+    "reference": [
+      {
+        "title": "Simulating Lightning on a Computer",
+        "url": "https://boxbase.org/entries/2014/aug/18/simulating-lightning/"
+      },
+      {
+        "title": "Synthesizing thunder using JavaScript",
+        "url": "https://blog.kaistale.com/?p=1340"
+      },
+      {
+        "title": "Fast Animation of Lightning Using An Adaptive Mesh",
+        "url": "https://gamma.cs.unc.edu/FAST_LIGHTNING/lightning_tvcg_2007.pdf"
+      }
+    ],
+    "tags": ["lightning", "simulation", "physics", "computer graphics"],
+    "text": "Lightning is a fascinating phenomenon. It's also a difficult one to simulate. This article describes a method to simulate lightning on a computer."
+  }
+]

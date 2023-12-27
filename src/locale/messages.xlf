@@ -24,7 +24,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="9201103587777813545" datatype="html">
-        <source>Portfolio</source>
+        <source>Resume</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/nav/nav.component.html</context>
           <context context-type="linenumber">35,36</context>
