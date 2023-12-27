@@ -13,7 +13,7 @@ body, html {
 }
 
 .footer {
-    height: 60px; /* Adjust this to match the height of your footer */
+    height: 40px; /* Adjust this to match the height of your footer */
 }
 
 app-bg-canvas {
