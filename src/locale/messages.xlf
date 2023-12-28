@@ -2,46 +2,249 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="8439955599488894226" datatype="html">
+        <source>Privacy Policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1961479196007068387" datatype="html">
+        <source>Welcome to my Privacy Policy. At danilo-marques.web.app, I value and respect your privacy, and I am committed to protecting your personal information.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8594612393127016242" datatype="html">
+        <source>1. Information Collection</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1034514246303041296" datatype="html">
+        <source>When you visit danilo-marques.web.app, I collect the following information through the contact page:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8953033926734869941" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4768749765465246664" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8066608938393600549" datatype="html">
+        <source>Message</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5365877995400449970" datatype="html">
+        <source>This information is collected for the sole purpose of responding to your inquiries and providing the information you request.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3697721414481068480" datatype="html">
+        <source>2. Use of Information</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3957331165221344181" datatype="html">
+        <source>The information collected is used exclusively for communication purposes. I do not sell, trade, or share your personal information with third parties.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1758240811406843259" datatype="html">
+        <source>3. Firebase Analytics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8820962259719524286" datatype="html">
+        <source>I utilize Firebase Analytics for default statistical measurements. This tool collects aggregate, non-personal data to help me understand how visitors interact with my website.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6923784735615459787" datatype="html">
+        <source>4. Data Storage</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1540563739765725162" datatype="html">
+        <source>Contact form submissions are stored securely. I retain this information for 3 months, after which it is permanently deleted.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5667081958897968659" datatype="html">
+        <source>5. Security Measures</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4022518714970275862" datatype="html">
+        <source>I have implemented security measures to protect the collected data, including RSA and Hashing.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1563546020833157759" datatype="html">
+        <source>6. User Rights</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7107979514263575475" datatype="html">
+        <source>You have the right to request access, correction, or deletion of your personal information. To exercise these rights, please contact me at danilo.nmarques@gmail.com.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5128182314632326072" datatype="html">
+        <source>7. Contact Information</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5632929252032020770" datatype="html">
+        <source>If you have any questions or concerns regarding this Privacy Policy, please contact me at danilo.nmarques@gmail.com.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4473395838256792927" datatype="html">
+        <source>8. Policy Updates</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1456434398778228688" datatype="html">
+        <source>This Privacy Policy may be updated to reflect changes in data practices. Users will be notified of updates on the website.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">44,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8361583460315795209" datatype="html">
+        <source>9. Compliance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1582531894404468111" datatype="html">
+        <source>I am committed to complying with applicable data protection laws, including Lei Geral de Proteção de Dados (LGPD) in Brazil.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4860003664021767688" datatype="html">
+        <source>10. Legal Basis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="866877223813785358" datatype="html">
+        <source>The legal basis for processing personal data on danilo-marques.web.app is specified in Article 7 of the LGPD, including consent, contract execution, legal obligation, legitimate interest, and other lawful bases as applicable.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">52,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5725442335748157585" datatype="html">
+        <source>If you have any questions about this Privacy Policy, please contact me at danilo.nmarques@gmail.com.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="454413178613346161" datatype="html">
+        <source>Last updated: <x id="INTERPOLATION" equiv-text="{{&quot;12/27/2023&quot; | date}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/privacy/privacy.component.html</context>
+          <context context-type="linenumber">56,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2622091616298213039" datatype="html">
+        <source>© 2023 Danilo Neumann Marques. All Rights Reserved.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="2821179408673282599" datatype="html">
         <source>Home</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="sourcefile">src/app/shared/nav/nav.component.html</context>
+          <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7751010942038334793" datatype="html">
         <source>Blog</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="sourcefile">src/app/shared/nav/nav.component.html</context>
+          <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2166387370746230023" datatype="html">
         <source> About Me </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="sourcefile">src/app/shared/nav/nav.component.html</context>
+          <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9201103587777813545" datatype="html">
+      <trans-unit id="7182974689040833178" datatype="html">
         <source>Resume</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
-          <context context-type="linenumber">35,36</context>
+          <context context-type="sourcefile">src/app/shared/nav/nav.component.html</context>
+          <context context-type="linenumber">54,55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5242666957552704871" datatype="html">
         <source>Hobbies</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
-          <context context-type="linenumber">36,37</context>
+          <context context-type="sourcefile">src/app/shared/nav/nav.component.html</context>
+          <context context-type="linenumber">57,58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7922989125096435449" datatype="html">
         <source>Contact</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/nav/nav.component.html</context>
-          <context context-type="linenumber">38,39</context>
+          <context context-type="sourcefile">src/app/shared/nav/nav.component.html</context>
+          <context context-type="linenumber">61,62</context>
         </context-group>
       </trans-unit>
     </body>

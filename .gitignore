@@ -45,3 +45,7 @@ Thumbs.db
 .firebase/
 .firebaserc
 firebase.json
+
+#internatinalization
+/src/locale/
+/src/locale/messages.xlf
