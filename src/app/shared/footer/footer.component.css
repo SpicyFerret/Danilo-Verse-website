@@ -1,9 +1,9 @@
 .custom-footer {
     background-color: rgba(80, 65, 116, 0.349);
-    min-height: 40px;
-    max-height: 40px;
+    height: 40px; /* Set the height of the footer */
     color: white;
     padding-top: 5px;
+    overflow: hidden; /* Hide any content that overflows the footer */
 }
 
 .custom-footer a {

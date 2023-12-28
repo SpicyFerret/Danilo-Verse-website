@@ -1,19 +1,26 @@
-.main-conteiner {
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #ffffff8f;
-}
-
 body, html {
     height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
 }
 
-.content {
-    min-height: calc(100% - 60px); /* Adjust 60px to match the height of your footer */
+.main-conteiner {
+    border-radius: 5px;
+    background-color: #ffffff8f;
+    overflow: auto;
+    flex: 1 0 auto; /* This will make the main container grow to take up the remaining space */
 }
 
 .footer {
-    height: 40px; /* Adjust this to match the height of your footer */
+    height: 40px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0; /* This will prevent the footer from shrinking if there's not enough space */
+    position: sticky;
+    bottom: 0;
 }
 
 app-bg-canvas {
