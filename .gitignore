@@ -48,4 +48,3 @@ firebase.json
 
 #internatinalization
 /src/locale/
-/src/locale/messages.xlf
