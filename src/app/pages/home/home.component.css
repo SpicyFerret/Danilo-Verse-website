@@ -1,0 +1,13 @@
+.title-image {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.title-text {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+}
+  
