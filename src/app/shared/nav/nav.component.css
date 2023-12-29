@@ -4,8 +4,15 @@
 
 .white-text {
     color: white;
+    font-weight: 600;
 }
 
 .white-icon {
+    filter: invert(1);
+}
+
+.custom-toggler {
+    background-color: azure;
+    color: azure;
     filter: invert(1);
 }
