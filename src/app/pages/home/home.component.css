@@ -4,6 +4,12 @@
   border-radius: 50%;
 }
 
+.vertical-image {
+  height: 300px;
+  width: auto;
+  border-radius: 50%;
+}
+
 .title-text {
   font-size: 1.3em;
   font-weight: 500;

@@ -13,5 +13,5 @@ import { BgCanvasComponent } from "./shared/bg-canvas/bg-canvas.component";
     imports: [CommonModule, RouterOutlet, NavComponent, FooterComponent, BgCanvasComponent]
 })
 export class AppComponent {
-  title = 'Danilo Neumann Marques';
+  title = 'Neumann Marques';
 }
