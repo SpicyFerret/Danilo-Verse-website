@@ -1,0 +1,11 @@
+.mailing {
+  text-align: left;
+}
+
+.mailing label {
+  font-weight: 550;
+  font-size: large;
+}
+.mailing h2 {
+  font-weight: 600;
+}
