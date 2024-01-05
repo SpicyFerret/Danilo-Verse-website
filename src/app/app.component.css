@@ -10,7 +10,8 @@ body, html {
     border-radius: 5px;
     background-color: #ffffff8f;
     overflow: auto;
-    flex: 1 0 auto; /* This will make the main container grow to take up the remaining space */
+    flex: 1 0 auto; 
+    padding-bottom: 20px;
 }
 
 .footer {
