@@ -1,46 +1,86 @@
 <div class="d-flex">
   <div>
     <div
-      ngbNav
-      #nav="ngbNav"
-      [(activeId)]="active"
-      class="nav-pills flex-column custom-nav"
-      orientation="vertical"
-    >
-      <ng-container ngbNavItem="basic">
-        <button ngbNavLink class="custom-nav-button" [class.active] (click)="scrollToSection('basic-section')">
-          Basic
-        </button>
-      </ng-container>
-      <ng-container ngbNavItem="education">
-        <button ngbNavLink class="custom-nav-button" (click)="scrollToSection('education-section')">
-          Education
-        </button>
-      </ng-container>
-      <ng-container ngbNavItem="experience">
-        <button ngbNavLink class="custom-nav-button" (click)="scrollToSection('experience-section')">
-          Experience
-        </button>
-      </ng-container>
-      <ng-container ngbNavItem="skills">
-        <button ngbNavLink class="custom-nav-button" (click)="scrollToSection('skills-section')">
-          Skills
-        </button>
-      </ng-container>
-      <ng-container ngbNavItem="projects">
-        <button ngbNavLink class="custom-nav-button" (click)="scrollToSection('projects-section')">
-          Projects
-        </button>
-      </ng-container>
-      <ng-container ngbNavItem="languages">
-        <button ngbNavLink class="custom-nav-button" (click)="scrollToSection('languages-section')">
-          Languages
-        </button>
-      </ng-container>
+    [ngStyle]="{ top: expandedNavStatus() ? '275px' : '105px' }"
+    class="custom-nav">
+      <div
+        ngbNav
+        #nav="ngbNav"
+        [(activeId)]="active"
+        class="nav-pills flex-column selectors"
+        orientation="vertical"
+      >
+        <ng-container ngbNavItem="basic">
+          <button
+            ngbNavLink
+            class="custom-nav-button"
+            [class.active]
+            (click)="scrollToSection('basic-section')"
+          >
+            Introduction
+          </button>
+        </ng-container>
+        <ng-container ngbNavItem="education">
+          <button
+            ngbNavLink
+            class="custom-nav-button"
+            (click)="scrollToSection('education-section')"
+          >
+            Education
+          </button>
+        </ng-container>
+        <ng-container ngbNavItem="experience">
+          <button
+            ngbNavLink
+            class="custom-nav-button"
+            (click)="scrollToSection('experience-section')"
+          >
+            Experience
+          </button>
+        </ng-container>
+        <ng-container ngbNavItem="skills">
+          <button
+            ngbNavLink
+            class="custom-nav-button"
+            (click)="scrollToSection('skills-section')"
+          >
+            Skills
+          </button>
+        </ng-container>
+        <ng-container ngbNavItem="projects">
+          <button
+            ngbNavLink
+            class="custom-nav-button"
+            (click)="scrollToSection('projects-section')"
+          >
+            Projects
+          </button>
+        </ng-container>
+        <ng-container ngbNavItem="languages">
+          <button
+            ngbNavLink
+            class="custom-nav-button"
+            (click)="scrollToSection('languages-section')"
+          >
+            Languages
+          </button>
+        </ng-container>
+      </div>
+      <!-- Download buttom -->
+      <p></p>
+      <div class="selectors">
+        <a
+          class="btn custom-nav-button btn-lg download-btn"
+          (click)="downloadResume()"
+        >
+          <i class="bi bi-download"></i>
+          Download
+        </a>
+      </div>
     </div>
   </div>
 
-  <div class="ms-4 resume-content">
+  <div id="resume-content" class="ms-4 resume-content">
     <app-resume-basic id="basic-section"></app-resume-basic>
     <app-resume-education id="education-section"></app-resume-education>
     <app-resume-experience id="experience-section"></app-resume-experience>

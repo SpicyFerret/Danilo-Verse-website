@@ -1,0 +1,15 @@
+.align-justify {
+    text-align: justify;
+}
+h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.education-info {
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+}

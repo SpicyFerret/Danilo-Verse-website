@@ -4,12 +4,13 @@ body, html, .parent-of-custom-nav {
 }
 
 .custom-nav {
+    position: fixed;
+    z-index: 1000; /* adjust as needed */
+}
+.selectors {
     border-radius: 10px;
     background-color: #ffffff6f;
     box-shadow: 0 0 10px #0000001a;
-    position: fixed;
-    top: 105px;
-    z-index: 1000; /* adjust as needed */
 }
 
 .resume-content {
@@ -17,5 +18,8 @@ body, html, .parent-of-custom-nav {
     padding-left: 95px;
 }
 
+.download-btn {
+    font-size: medium;
+}
 
   

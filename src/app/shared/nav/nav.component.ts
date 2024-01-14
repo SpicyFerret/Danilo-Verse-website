@@ -13,4 +13,23 @@ import { NgbDropdownModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class NavComponent {
     disabled = true;
+    private expandedNav: boolean = false;
+
+    private static instance:NavComponent;
+
+    constructor() {
+        NavComponent.instance = this;
+    }
+
+    public static getInstance() {
+        return this.instance;
+    }
+
+    toggleExpandedNav() : void {
+        this.expandedNav = !this.expandedNav;
+    }
+
+    public expandedNavStatus(): boolean {
+        return this.expandedNav;
+    }
 }
