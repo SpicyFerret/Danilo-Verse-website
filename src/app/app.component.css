@@ -20,7 +20,6 @@ body, html {
     margin: 0;
     padding: 0;
     flex-shrink: 0; /* This will prevent the footer from shrinking if there's not enough space */
-    position: sticky;
     bottom: 0;
 }
 

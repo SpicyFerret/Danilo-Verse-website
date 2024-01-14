@@ -95,7 +95,6 @@ export class MeteorShower {
       // Remove the meteor if it is out of the screen
       if(meteor.x + meteor.width < 0) {
         this.meteors.splice(this.meteors.indexOf(meteor), 1);
-        console.log(this.meteors.length);
       }
     });
   }

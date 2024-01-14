@@ -10,29 +10,20 @@ import { BlockMananger } from '../../util/blockMananger';
 })
 export class HomeComponent {
 
-  private pageContent: BlockMananger;
+  private pageContent: BlockMananger = new BlockMananger().addBlock(
+    "Welcome to the Danilo-Verse",
+    "Here you can explore my world and learn about my passions and interests.\nEnjoy your stay!",
+    "../../../assets/pictures/inside-cessna152.jpeg"
+  ).addBlock(
+    'About me',
+    `Hello there! I'm Danilo Neumann Marques, a ${this.getMyAge()} years old software developer and plane pilot, and I'm thrilled to welcome you to my digital space.\nHere, you'll find a blend of my interests, including PC games, PC building, JDM cars, aviation, programming, and anime.\nJoin me on this journey as I share my experiences, insights, and creations.`,
+    '../../../assets/pictures/helloween-pilot.jpg'
+  ).addBlock(
+    'Explore more',
+    `Use the navigation menu to delve into specific aspects of my life, such as my hobbies, professional journey, and how to get in touch.\nThanks for stopping by!`,
+    '../../../assets/pictures/forest.jpg'
+  );
 
-  constructor() {
-    this.pageContent = new BlockMananger();
-    // Welcome
-    this.pageContent.addBlock(
-      "Welcome to the Danilo-Verse",
-      "Here you can explore my world and learn about my passions and interests.\nEnjoy your stay!",
-      "../../../assets/pictures/inside-cessna152.jpeg"
-    );
-    // About me
-    this.pageContent.addBlock(
-      'About me',
-      `Hello there! I'm Danilo Neumann Marques, a ${this.getMyAge()} years old software developer and plane pilot, and I'm thrilled to welcome you to my digital space.\nHere, you'll find a blend of my interests, including PC games, PC building, JDM cars, aviation, programming, and anime.\nJoin me on this journey as I share my experiences, insights, and creations.`,
-      '../../../assets/pictures/helloween-pilot.jpg'
-    );
-    // Explore more
-    this.pageContent.addBlock(
-      'Explore more',
-      `Use the navigation menu to delve into specific aspects of my life, such as my hobbies, professional journey, and how to get in touch.\nThanks for stopping by!`,
-      '../../../assets/pictures/forest.jpg'
-    );
-  }
 
   ngAfterViewInit(): void {
     this.loadPageContent();

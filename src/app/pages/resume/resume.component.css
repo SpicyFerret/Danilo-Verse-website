@@ -1,0 +1,21 @@
+body, html, .parent-of-custom-nav {
+    height: 100%;
+    overflow: visible;
+}
+
+.custom-nav {
+    border-radius: 10px;
+    background-color: #ffffff6f;
+    box-shadow: 0 0 10px #0000001a;
+    position: fixed;
+    top: 105px;
+    z-index: 1000; /* adjust as needed */
+}
+
+.resume-content {
+    margin-left: auto;
+    padding-left: 95px;
+}
+
+
+  

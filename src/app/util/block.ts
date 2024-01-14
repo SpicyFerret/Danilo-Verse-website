@@ -35,7 +35,7 @@ export class Block {
       img.src = this.image;
       if (img.height > img.width) {
         style = `width: ${
-          90 * (img.width / img.height)
+          90 * (img.width / img.height) * (img.width / img.height)
         }%; height: 100%; border-radius: 10px;`;
       } else {
         style = 'width: 90%; height: 100%; border-radius: 10px;';

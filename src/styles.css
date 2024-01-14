@@ -1,6 +1,6 @@
 body {
   background-color: darkgray;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .container.content-section {
@@ -13,3 +13,20 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Nav Buttons */
+.custom-nav-button {
+  color: #503887 !important; /* default text color */
+  background-color: #00000000 !important; /* default background color */
+}
+
+.custom-nav-button:hover {
+  color: #342558 !important; /* change this to your desired hover or active text color */
+  background-color: #00000000 !important; /* change this to your desired hover or active background color */
+}
+
+.custom-nav-button.active {
+  color: white !important;
+  background-color: #503887 !important;
+}
+

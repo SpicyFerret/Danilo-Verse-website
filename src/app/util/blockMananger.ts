@@ -3,8 +3,8 @@ import { Block } from "./block";
 export class BlockMananger {
     private blocks: Block[] = [];
 
-    addBlock(title: string, content: string, image: string): void;
-    addBlock(titleOrBlock: string | Block, content?: string, image?: string): void {
+    addBlock(title: string, content: string, image: string): BlockMananger;
+    addBlock(titleOrBlock: string | Block, content?: string, image?: string): BlockMananger {
         if (typeof titleOrBlock === 'string') {
             // If the first argument is a string, we assume that all three arguments are provided
             this.blocks.push(new Block(titleOrBlock, content!, image!));
@@ -12,6 +12,7 @@ export class BlockMananger {
             // If the first argument is not a string, we assume it's a Block
             this.blocks.push(titleOrBlock);
         }
+        return this;
     }
 
     assemble() : string {
