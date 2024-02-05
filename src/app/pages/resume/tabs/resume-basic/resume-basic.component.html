@@ -1,7 +1,7 @@
 <div class="container content-section">
   <div class="row">
-    <div class="col-7">
-      <h2>Professional Overview</h2>
+    <h2>Professional Overview</h2>
+    <div [ngClass]="{'col order-2': mobilesCanvas(), 'col-7 order-1': !mobilesCanvas()}"> <!-- Intro -->
       <p class="intro">
         Welcome to my professional portfolio! I'm a passionate and versatile
         individual born in July 2000. My journey started with programming at the
@@ -25,17 +25,18 @@
       </p>
     </div>
 
-    <div class="col">
+    <div [ngClass]="{'col order-1': mobilesCanvas(), 'col order-2': !mobilesCanvas()}"> <!-- Image -->
       <img
         src="../../../../../assets/pictures/dressed-up.jpg"
-        class="img-fluid rounded"
+        class="rounded"
+        [ngClass]="{'img-fluid': !mobilesCanvas(), 'img-thumbnail': mobilesCanvas()}"
       />
     </div>
   </div>
-  <div class="contact-info container">
+  <div class="contact-info container"> <!-- Constact Info -->
     <h2>Contact Information</h2>
 
-    <div class="row row-cols-auto">
+    <div class="row row-cols-auto"> 
       <div class="col">
         <p>
           <i class="bi bi-phone custom-icon"></i>

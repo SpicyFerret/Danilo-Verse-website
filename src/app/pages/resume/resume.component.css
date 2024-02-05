@@ -5,8 +5,9 @@ body, html, .parent-of-custom-nav {
 
 .custom-nav {
     position: fixed;
-    z-index: 1000; /* adjust as needed */
 }
+
+
 .selectors {
     border-radius: 10px;
     background-color: #ffffff6f;

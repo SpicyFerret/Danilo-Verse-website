@@ -22,3 +22,9 @@ p {
 .contact-info {
     margin-top: 20px;
 }
+
+.img-thumbnail {
+    height: 300px;
+    width: auto;
+    margin-bottom: 20px;
+}

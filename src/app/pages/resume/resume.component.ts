@@ -10,6 +10,7 @@ import { NavComponent } from '../../shared/nav/nav.component';
 import { CommonModule } from '@angular/common';
 import { jsPDF } from 'jspdf';
 import html2canvas from 'html2canvas';
+import { SharedDataService } from '../../services/shared-data/shared-data.service';
 
 @Component({
   selector: 'app-resume',
@@ -30,6 +31,12 @@ import html2canvas from 'html2canvas';
 export class ResumeComponent {
   active: string = 'basic';
   scrollingToSection = false;
+
+  constructor(sharedData: SharedDataService) {}
+  
+  isLandscape(): boolean {
+    return window.matchMedia('(orientation: landscape)').matches;
+  }
 
   expandedNavStatus(): boolean {
     const isPortrait = window.matchMedia('(orientation: portrait)').matches;
